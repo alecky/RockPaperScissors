@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rock Paper Scissors</h1>
+            <p>Choose your weapon and challenge the computer!</p>
+        </header>
+
+        <div class="game-area">
+            <div class="score-board">
+                <div class="score">
+                    <span class="player-label">You</span>
+                    <span class="score-value" id="player-score">0</span>
+                </div>
+                <div class="score">
+                    <span class="player-label">Computer</span>
+                    <span class="score-value" id="computer-score">0</span>
+                </div>
+            </div>
+
+            <div class="choices">
+                <div class="choice-section">
+                    <h3>Your Choice</h3>
+                    <div class="choice-display" id="player-choice">
+                        <span class="choice-text">?</span>
+                    </div>
+                </div>
+                
+                <div class="vs">VS</div>
+                
+                <div class="choice-section">
+                    <h3>Computer Choice</h3>
+                    <div class="choice-display" id="computer-choice">
+                        <span class="choice-text">?</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result" id="result">
+                <p>Make your choice to start playing!</p>
+            </div>
+
+            <div class="controls">
+                <button class="choice-btn" data-choice="rock">
+                    <span class="emoji">🪨</span>
+                    <span class="text">Rock</span>
+                </button>
+                <button class="choice-btn" data-choice="paper">
+                    <span class="emoji">📄</span>
+                    <span class="text">Paper</span>
+                </button>
+                <button class="choice-btn" data-choice="scissors">
+                    <span class="emoji">✂️</span>
+                    <span class="text">Scissors</span>
+                </button>
+            </div>
+
+            <div class="game-controls">
+                <button class="reset-btn" id="reset-btn">Reset Game</button>
+            </div>
+        </div>
+
+        <div class="rules">
+            <h3>How to Play</h3>
+            <ul>
+                <li>🪨 Rock beats ✂️ Scissors</li>
+                <li>📄 Paper beats 🪨 Rock</li>
+                <li>✂️ Scissors beats 📄 Paper</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
